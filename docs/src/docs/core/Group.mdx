@@ -64,6 +64,29 @@ function InvalidDemo() {
 }
 ```
 
+## Example to using Group for Responsive
+
+```tsx
+import {Group} from '@matine/core'
+
+function Landin () {
+      return(
+          <Group
+             align="center"
+             position="center"
+             style={{ width: "100vw", height: "100vh" }}
+             sx={(theme) => ({ backgroundColor: theme.colors.blue[1] })}
+             spacing={220}
+            p="md"
+          >
+            <div>like right content</div>
+            <div>like left content</div>
+          </Group>
+      )
+}
+```
+
+
 ## Browser support
 
 Group uses [flexbox gap](https://caniuse.com/flexbox-gap) to add spacing between children.
